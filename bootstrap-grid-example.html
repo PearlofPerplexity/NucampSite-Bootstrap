@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <style>
+        .container {
+            border: solid blue;
+        }
+        .row {
+            border: solid yellow;
+        }
+        .row div {
+            border: solid lightgreen;
+        }
+    </style>
+
+    <title>Bootstrap Grid Example</title>
+</head>
+<body>
+    <header>There are 12 things</header>
+    <div class="container">
+        <div class="row">
+            <div class="col">1</div>
+            <!-- When the viewport is sized md and up, this column will take up 6 of the 12 potential rows and 8 rows in lg viewports and up -->
+            <div class="col col-md-6 col-lg-8">2</div>
+            <div class="col">3</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+        </div>
+        <div class="row">
+            <div class="col-4">1</div>
+            <div class="col-8">2</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+            <div class="col">10</div>
+            <div class="col">11</div>
+            <div class="col">12</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">Bootstrap Breakpoints</div>
+        </div>
+        <div class="row">
+            <div class="col-4">Size</div>
+            <div class="col-8">Viewport Width</div>
+        </div>
+        <div class="row">
+            <div class="col-4">XS</div>
+            <div class="col-8">&lt;576px</div>
+        </div>
+        <div class="row">
+            <div class="col-4">SM</div>
+            <div class="col-8">&gt;576px</div>
+        </div>
+        <div class="row">
+            <div class="col-4">MD</div>
+            <div class="col-8">&gt;768px</div>
+        </div>
+        <div class="row">
+            <div class="col-4">LG</div>
+            <div class="col-8">&gt;992px</div>
+        </div>
+        <div class="row">
+            <div class="col-4">XL</div>
+            <div class="col-8">&gt;1200px</div>
+        </div>
+    </div>
+</body>
+</html>
